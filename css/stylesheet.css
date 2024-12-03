@@ -4,6 +4,9 @@
     grid-template-columns: 50%;
     grid-template-rows: 30% 10% 60%;
     height: 100vh;
+    background-color: #343434;
+    margin-left: 2px;
+    margin-right: 2px;
     grid-template-areas: 
     'tit tit'
     'blg prod'
@@ -11,13 +14,16 @@
 }
 
 Header{
-grid-area: tit;
-font-size:3em;
-line-height:10px;
-display:flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+    grid-area: tit;
+    font-size:3em;
+    line-height:10px;
+    margin-block: 2px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 .text{
     color: white;
@@ -27,15 +33,104 @@ flex-direction: column;
 
 #header{
     background-color: #27ae60;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+nav{
+    background-color: #156336;
+    display: flex;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display:flex;
+    margin-bottom: 2px;
+    margin-left: 1px;
+    margin-right: 1px;
+
 }
 
 #nav1{
-grid-area: blg;
+    grid-area: blg;
+    margin-right: 1px;
 }
 
 #nav2{
-grid-area: prod;
+    grid-area: prod;
+    margin-left: 1px;
+    
 }
 #featurebild{
-grid-area:bild;
+    grid-area:bild;
+}
+
+/* about sida */
+
+#contan2{
+    display:flex;
+    display:grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 30% 10% 20% 20%;
+    height: 100vh;
+    background-color: #343434;
+    grid-template-areas: 
+    'tit tit'
+    'home produc'
+    'inf inf'
+    'inf inf'
+}
+
+#nav6{
+    grid-area: home;
+    margin-right: 1px;
+}
+
+#nav5{
+    grid-area: produc;
+    margin-left: 1px;
+    
+}
+
+
+/* produkt sida*/
+
+#contan9{
+    display:flex;
+    display:grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 30% 10% 40%;
+    height: 100vh;
+    background-color: #343434;
+    grid-template-areas: 
+    'tit tit'
+    'blog home'
+    'inf inf'
+    'inf inf'
+}
+
+#nav8{
+    grid-area: home;
+    margin-right: 1px;
+}
+
+#nav0{
+    grid-area: blog;
+    margin-left: 1px;
+    
+}
+section{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin: 1px;
+    background-color: #27ae60;
 }
