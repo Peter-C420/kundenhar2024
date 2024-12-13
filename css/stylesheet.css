@@ -69,6 +69,12 @@ nav{
 }
 #featurebild{
     grid-area:bild;
+    justify-content: center;
+}
+#fbilden{
+width: 90vw;
+object-fit: cover;
+border-radius: 5px;
 }
 
 /* about sida */
@@ -77,7 +83,7 @@ nav{
     display:flex;
     display:grid;
     grid-template-columns: 50%;
-    grid-template-rows: 30% 10% 20% 20%;
+    grid-template-rows: 30% 10% 30% 30%;
     height: 100vh;
     background-color: #343434;
     grid-template-areas: 
@@ -98,6 +104,15 @@ nav{
     
 }
 
+.bildish{
+    display: flex;
+    justify-content: left;
+    
+    
+}
+
+
+
 
 /* produkt sida*/
 
@@ -111,8 +126,7 @@ nav{
     grid-template-areas: 
     'tit tit'
     'blog home'
-    'inf inf'
-    'inf inf'
+    'inf inf';
 }
 
 #nav8{
@@ -133,4 +147,22 @@ section{
     padding-left: 5px;
     margin: 1px;
     background-color: #27ae60;
+    
+}
+
+a:hover{
+color: gray;
+}
+
+#artiklar{
+    grid-area: inf;
+    display: flex;
+    justify-content: center;
+}
+
+.scrollbox{
+    grid-area: inf;
+    display: flex;
+    overflow: scroll;
+    width: 1; 
 }
